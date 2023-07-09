@@ -1,0 +1,19 @@
+body{
+    background-color: pink;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#headrs{
+    text-align: center;
+}
+#image{
+    text-align: center;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#links{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: right;
+}
