@@ -1,0 +1,16 @@
+h3{
+    color: yellowgreen;
+}
+p{
+    color: violet;
+}
+#lo{
+    color: blueviolet;
+}
+/* .s1{
+    color: brown;
+} */
+
+span,h4,h6{
+    color: chartreuse;
+}
