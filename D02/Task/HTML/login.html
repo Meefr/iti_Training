@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login.html">
+        <fieldset>
+            <legend> Login </legend>
+            <label>User Name</label>
+            <input type="text" name="username">
+            <br>
+            <label>Password</label>
+            <input type="password" name="password">
+            <br>
+            <label>Select Your Location: </label>
+            <select>
+                <option value="Please Select" disabled selected class="disableOption">
+                    Please Select
+                </option>
+                <optgroup label="Africa">
+                <option value="Egypt">
+                    Egypt
+                </option>
+                <option value="Sudan">
+                    Sudan
+                </option>
+                <option value="Namibia">
+                    Namibia  
+                </option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="France">
+                        France
+                    </option>
+                    <option value="Russia">
+                        Russia
+                    </option>
+                    <option value="UK">
+                        UK  
+                    </option>
+                </optgroup>
+                <optgroup label="NorthAmerica">
+                    <option value="Canada">
+                        Canada
+                    </option>
+                    <option value="Mexico">
+                        Mexico
+                    </option>
+                    <option value="USA">
+                        USA  
+                    </option>
+                </optgroup>
+
+            </select>
+
+            <br>
+
+            <input type="checkbox" name="rememberMe"> RememberMe
+            
+            <br>
+            <br>
+            <lable id="login"><button name="Login" type="submit"> Log In</button></lable>
+            
+
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form id="form1">
+        <table >
+            <tr>
+                <td><label for="firstName">First name</label></td>
+                <td><input type="text" name ="firstName"></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last name</label></td>
+                <td><input type="text" name ="lastName"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name ="password"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Gender</td>
+                <td>
+                    <input type="radio" name="male" value="male">
+                    <label for="gender">male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="female" value="female">
+                    <label for="gender">female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birthday">Birthday</label>
+                    <input type="month" id="birthday" name="birthday">
+                </td>
+                <td>
+                    <input type="date" id="birthday" name="birthday">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="header" id="interests">
+                    <u>
+                        Interests
+                    </u>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="sports" value="sports">
+                    <label for="sports"> Sports</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="music" value="music">
+                    <label for="music"> Music</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="book" value="book">
+                    <label for="book">Books</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="computer" value="computer">
+                    <label for="computer">Computer Stuff</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="fashion" value="fashion">
+                    <label for="fashion">Fashion</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="movies" value="movies">
+                    <label for="movies">Movies</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;" >
+                    <button type="submit" class="header">Submit</button>
+                </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

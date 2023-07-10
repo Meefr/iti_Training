@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5;url=profile.html">
+    <title>Document</title>
+    <style>
+        #l1{
+            color: red;
+        }
+        .c1{
+            color: aquamarine;
+            background-color: blueviolet;
+        }
+        label{
+            color: blue;
+        }
+        div{
+            width: 450px;
+            outline: blue 2px solid;
+           
+            /* border-color: red;
+            border-width: 2px;
+            border-style: solid; */
+            border:  2px red solid;
+            border-radius: 30px 500px 0px 1000px;
+            /* padding: 10px;
+             */
+             padding-left: 20px;
+             /* margin: 50px; */
+             margin-bottom: 20px;
+            /* border-bottom: dashed red 2px;
+            border-top: dotted aqua 5px; */
+        }
+    </style>
+</head>
+<body>
+<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut sunt id doloribus totam rem tempore tempora soluta optio quae? Sunt eveniet incidunt modi aliquid recusandae? Illo ut officia aut?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum vero id voluptatibus, nisi error excepturi inventore possimus facilis perspiciatis obcaecati repellendus iste! Nesciunt accusantium quis, ratione excepturi quam doloremque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio saepe, et illo dolore facere quaerat assumenda cum enim labore magnam debitis minima nihil error, aliquam quam velit quis doloremque.
+</div>
+
+
+<p class="c1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum placeat omnis excepturi optio, nesciunt quidem illum est ab praesentium tenetur aliquam ea modi iure laborum aperiam molestiae delectus nostrum.
+</p>
+    <!-- http://127.0.0.1:5501/pag2.html?name=nada&passwd=23
+    ?name=nada&passwd=23 querystring -->
+    <form action="pag2.html" method="get">
+        <fieldset>
+            <legend>Login in</legend>
+            <label class="c1" ><b><i>Name</i></b></label>
+      <label class="c1" id="l1" for="inp1"><u>N</u>ame</label>  <input accesskey="N" tabindex="1" id="inp1" type="text" name="name" placeholder="enter your name">
+      <br>
+      <label class="c1"><u>P</u>assword</label>  <input accesskey="P" tabindex="5" type="password" name="passwd" >
+
+      <br>
+      <label class="c1">password22</label>  <input type="password" tabindex="4" name="passwd" >
+      <br>
+      <textarea rows="5" cols="10" name="txt"></textarea>
+      <br>
+      <input type="radio" name="r1" value="coffee">coffee
+      <input type="radio" name="r1" value="tea">tea
+      <input type="radio" name="r1" value="Milk">Milk
+      <br>
+      <select multiple="multiple" >
+        <optgroup label="drinks">
+        <option>Coffee</option>
+        <option>Tea</option>
+        <option>Milk</option>
+    </optgroup>
+    <optgroup label="playing" disabled>
+        <option>football</option>
+        <option>basketball</option>
+    </optgroup>
+    <optgroup label="drinks">
+        <option>Coffee</option>
+        <option>Tea</option>
+        <option>Milk</option>
+    </optgroup>
+
+      </select>
+
+      <br>
+<input type="checkbox" name="read"> reading
+<input type="checkbox" name="swim"> swimming
+<input type="checkbox" name="play" >playing
+      <br>
+<input tabindex="3"  type="submit" value="send Data">
+<input tabindex="2" type="reset" value="Clear"> 
+</fieldset>
+    </form>
+
+
+
+
+    <table border="2" bordercolor="red">
+       <caption >Table 1</caption>
+        <tr>
+            <th colspan="2">Vegetables</th>
+            <th colspan="2">Fruits</th>
+        </tr>
+        <tfoot>
+            <td>carrote</td>
+            <td>orange</td>
+           
+            <td>red</td>
+        </tfoot>
+        <tr>
+            <td>Name</td>
+            <td>Color</td>
+            <td>Name</td>
+            <td>Color</td>
+        </tr>
+        <tr>
+            <td>tomato</td>
+            <td>red</td>
+            <td rowspan="3">apple</td>
+            <td>yellow</td>
+
+
+
+    
+        </tr>
+        <tr>
+            <td>Cucumber</td>
+            <td>dark green</td>
+            
+            <td>green</td>
+        </tr>
+       
+    </table>
+    <img src="CPTPILLOWS_9db8.jpg" usemap="#imgmap">
+    <map name="imgmap">
+        <area shape="rect" coords="102,39,237,181" href="http://www.twitter.com">
+    </map>
+<ul>
+    <li>
+        <a href="home.html" target="_blank">home</a>
+        <a href="profile.html" target="frame2">profile</a>
+    </li>
+</ul>
+
+
+<iframe src="https://abc.com/" width="500" height="500"></iframe>
+<iframe name="frame2" src="pag2.html" width="500" height="500"></iframe>
+
+
+
+
+
+</body>
+</html>
