@@ -1,0 +1,14 @@
+h1{
+    
+}
+
+p{
+    display: block;
+    margin: 0.2px;  
+    color: blue;
+    font-size: 24px;
+}
+
+span{
+    color: black;
+}
