@@ -1,4 +1,3 @@
-
 function task1(){
  
 var nameRegExp = /[a-zA-Z]+$/;
@@ -45,6 +44,7 @@ while(f1 || f2 || f3 || f4){
         f4 = false;
 }
 
+document.write("<style>p{color: blue;font-size: 24px;}  span{ color: black;margin-left: 10px;}</style>")
 document.write("<p> Welcome dear guest: <span>"+ username + "</span></p> " );
 document.write("<p> Your telephone number is: <span>"+ telephoneNum + "</span></p>");
 document.write("<p> Your mobile number is: <span>"+ mobileNum + "</span></p>");
@@ -63,9 +63,10 @@ function task2(){
     }
     arr.sort(function(a,b){return b - a});
     tmparr2.sort(function(a,b){return a - b});
-    document.write("<p> u've entered the values of <span>"+ tmparr1.join() + "</span></p> " );
+    document.write("<style>p{color: blue;font-size: 24px;}  span{ color: black;margin-left: 10px;}</style>")
+    document.write("<p> u've entered the values of <span>"+ tmparr1.join() + "</span></p>" );
     document.write("<p> ur values after being sorted descending <span>"+ arr.join() + "</span></p>");
-    document.write("<p> ur values after being sorted ascecnding <span>"+ tmparr2.join() + "</span></p> " ); 
+    document.write("<p> ur values after being sorted ascecnding <span>"+ tmparr2.join() + "</span></p>" ); 
     document.write("<a href='../HTML/index.html'>back</a>");
 }
 
