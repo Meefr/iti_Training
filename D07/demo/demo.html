@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="page2.html" >
+        <input type="button" value="1" onclick="addVal(this)">
+        <input type="button" value="2" onclick="addVal(this)">
+        <input type="button" value="3" onclick="addVal(this)">
+        <input type="button" value="4" onclick="addVal(this)">
+        <input type="button" value="5" onclick="addVal(this)">
+        <input type="button" value="6" onclick="addVal(this)">
+        <input type="text" id="txt">
+        <input type="button" value="c" onclick="">
+        <input type="button" value="<<" onclick="">
+
+        
+
+
+
+
+
+
+
+            <!-- <select id="menue" multiple>
+                <option>option #1</option>
+                <option >option #2</option>
+                <option>option #3</option>
+                <option>option #4</option>
+                <option>option #5</option>
+                <option>option #6</option>
+
+            </select>
+            <input type="button" value="select" onclick="showSelection()" > -->
+            <!-- <button onclick="">done</button> -->
+
+        <!-- <input type="text" id="inp" name="usrName" onblur="displayVal(this)"> -->
+        <!-- <input type="button" value="submit" onclick="submit()"> -->
+       <!-- <input type="button" value="focusInp" onclick="focusInp()">
+       
+       
+        <input type="submit" > -->
+    </form>
+    <div id="d1"></div>
+
+
+
+
+    <!-- <input type="button" value="click" onclick="changeInfo()">
+    <input type="text" name="usrName">
+
+    <div id="d1"></div>
+    <h1 class="c1">headiiing</h1>
+    <h1>headiiing 2</h1>
+    <p class="c1" id="p1"></p>
+    <img name="imageeee1" onmouseover="changeSrc(this)" onmouseout="returnOrigin(this)" id="img1" src="./images/1.jpg" width="300" height="150">
+    <img  onmouseover="changeSrc(this)" onmouseout="returnOrigin(this)" src="./images/1.jpg" width="300" height="150"> -->
+   <!-- <p></p>
+   <div></div>
+   <h1></h1>
+   <input type="text"> -->
+   <script>
+function addVal(val){
+    // console.log(val)
+document.getElementById("txt").value +=val.value
+}
+
+
+
+
+
+        // document.getElementsByTagName("input")[0].onclick=showSelection;
+
+
+        function showSelection(){
+            document.querySelector("#d1").innerHTML=""
+            // multiple
+            var sel= document.getElementById("menue")
+            for (var i=0;i<sel.options.length;i++){
+                // console.log(sel.options[i])
+                 if (sel.options[i].selected==true){
+                    document.querySelector("#d1").innerHTML+="<br>"+ sel.options[i].text
+                 }
+            }
+
+            // only one selected
+            // var sel= document.getElementById("menue")
+            // var idx= sel.selectedIndex;
+            // document.querySelector("#d1").innerHTML=sel.options[idx].text
+            // console.log(idx)
+
+        }
+
+
+
+
+        function focusInp(){
+            document.getElementById("inp").select();
+
+        }
+        function displayVal(data){
+           document.getElementById("d1").innerHTML=data.value
+        }
+
+
+
+
+        function submitFunc(){
+            alert("from submitFunc")
+        }
+
+
+
+
+        function changeSrc(myImg){
+            console.log(myImg)
+            // document.images[0].src="./images/2.jpg"
+            myImg.src="./images/2.jpg"
+        }
+
+        function returnOrigin(img){
+           img.src="./images/1.jpg"
+
+        }
+
+
+
+
+
+    //    console.log( document.getElementById("d1"))
+    function changeInfo(){
+// console.log(document.getElementById("img1"))
+// document.getElementById("img1").src="./images/2.jpg"
+// console.log(document.images[0])
+// document.images[0].src="./images/2.jpg"
+// console.log(document.images["imageeee1"])
+
+
+
+        // document.querySelector("#d1")
+    //  console.log(   document.querySelector(".c1"))
+
+
+
+
+
+
+
+
+        // console.log(document.getElementsByName("usrName")[0].type="button")
+        // document.getElementsByName("usrName")[0].value="ok"
+    // document.getElementById("d1").innerHTML="<b>msg</b>"
+//   var data=document.getElementsByTagName("h1")[0].innerHTML;
+//   console.log(data)
+        // document.getElementsByTagName("input")[0].value="done"
+        // document.getElementsByTagName("input")[0].type="text"
+        // document.getElementById("p1").innerHTML="Group 1"
+        // document.getElementById("p1").style.color="red"
+
+        // console.log(document.getElementsByClassName("c1")[1])
+    }
+    </script>
+</body>
+</html>
