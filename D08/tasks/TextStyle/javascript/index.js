@@ -44,7 +44,7 @@ onload  = function(){
         else if (event.ctrlKey) 
             message = "Ctrl";
         else 
-        message = event.keyCode; 
+            message = event.keyCode; 
         alert(message);
     }); 
     this.document.addEventListener("contextmenu", function(event) {
