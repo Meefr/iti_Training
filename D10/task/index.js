@@ -1,14 +1,8 @@
 var fruits = ["apple", "strawberry", "banana", "orange", "mango"];
 console.log(fruits)
-console.log("all fruits are string : " + fruits.every(isNaN));
-console.log("some of fruits start with a : " + fruits.some(function() {
-    for (var i = 0 ; i < fruits.length ; i++)
-        {
-            if(fruits[i][0] == 'a')
-                return true;
-        }
-}));
-let newFruits = fruits.filter((val) => val[0] == 'b' || val[0] == 's');
+console.log("all fruits are string : " + fruits.every((val)=>isNaN(val)));
+console.log("some of fruits start with a : " + fruits.some((val)=>val[0]=='a'));
+let newFruits = fruits.filter((val) => val.startsWith('b') || val.startsWith('s'));
 console.log(newFruits);
 
 newFruits = fruits.map((val) => {
