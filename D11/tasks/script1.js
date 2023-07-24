@@ -34,7 +34,7 @@ let circle = new shape.circle(2);
 let triangle = new shape.triangle(2,2);
 let square = new shape.square(2);
 
-rect.displayData();
-square.displayData();
-triangle.displayData();
-circle.displayData();
+rect.toString();
+square.toString();
+triangle.toString();
+circle.toString();

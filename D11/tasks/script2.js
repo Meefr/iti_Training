@@ -3,6 +3,10 @@ export class polygon {
             this.area=0,
             this.name=shapName
     }
+    toString(){
+        console.log(`Name: ${this.name}`);
+        console.log(`Area: ${this.area}`);
+    }
 }
 
 export class rectangle extends polygon{
@@ -12,14 +16,13 @@ export class rectangle extends polygon{
         this.width = width;
     }
     #calcArea(){
-        this.area = this.height * this.width
+        this.area = this.height * this.width;
     }
-    displayData(){
+    toString(){
         this.#calcArea();
-        console.log(`Name: ${this.name}`);
+        super.toString();
         console.log(`Height: ${this.height}`);
         console.log(`Width: ${this.width}`);
-        console.log(`Area: ${this.area}`);
     }
 }
 
@@ -32,11 +35,10 @@ export class circle extends polygon{
     #calcArea(){
         this.area = (Math.PI * (this.radius ** 2)).toFixed(3); 
     }
-    displayData(){
+    toString(){
         this.#calcArea();
-        console.log(`Name: ${this.name}`);
-        console.log(`Radius: ${this.radius}`);
-        console.log(`Area: ${this.area}`);
+        super.toString();
+        console.log(`Radius: ${this.radius}`);      
     }
 }
 
@@ -49,11 +51,10 @@ export class square extends polygon{
     #calcArea(){
         this.area = this.side * this.side;
     }
-    displayData(){
+    toString(){
         this.#calcArea();
-        console.log(`Name: ${this.name}`);
+        super.toString();
         console.log(`Side: ${this.side}`);
-        console.log(`Area: ${this.area}`);
     }
 }
 
@@ -66,11 +67,10 @@ export class triangle extends polygon{
     #calcArea(){
         this.area = (this.base / 2) * this.height; 
     }
-    displayData(){
+    toString(){
         this.#calcArea();
-        console.log(`Name: ${this.name}`);
+        super.toString();
         console.log(`Base: ${this.base}`);
         console.log(`Height: ${this.height}`);
-        console.log(`Area: ${this.area}`);
     }
 }
